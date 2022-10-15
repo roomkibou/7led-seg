@@ -12,10 +12,15 @@ let 配列 = [
 125,
 7,
 127,
-111
+111,
+95,
+124,
+88,
+94,
+123
 ]
 basic.forever(function () {
-    for (let カウンター = 0; カウンター <= 9; カウンター++) {
+    for (let カウンター = 0; カウンター <= 15; カウンター++) {
         pins.digitalWritePin(DigitalPin.P16, 0)
         _7seg = pins.spiWrite(配列[カウンター])
         pins.digitalWritePin(DigitalPin.P16, 1)
